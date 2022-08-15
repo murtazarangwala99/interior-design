@@ -6,6 +6,10 @@
     .main-right{
         display: none;
     }
+    .main-left{
+        width: 100%;
+        justify-content: center;
+    }
 }
 /* 1030px to 800px */
 @media screen and (max-width:1030px) and (min-width:800px){
@@ -14,6 +18,10 @@
     }
     .main-right{
         display: none;
+    }
+    .main-left{
+        width: 100%;
+        justify-content: center;
     }
 }
 /* 0 to 800px */
@@ -29,5 +37,9 @@
     }
     main{
         margin: 1rem;
+    }
+    .main-left{
+        width: 100%;
+        justify-content: center;
     }
 }
