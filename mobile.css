@@ -1,0 +1,33 @@
+/* 1136px to 1030px */
+@media screen and (max-width:1136px) and (min-width:1030px){
+    .nav-links{
+        gap:2.5rem;
+    }
+    .main-right{
+        display: none;
+    }
+}
+/* 1030px to 800px */
+@media screen and (max-width:1030px) and (min-width:800px){
+    .nav-links{
+        gap: 2rem;
+    }
+    .main-right{
+        display: none;
+    }
+}
+/* 0 to 800px */
+@media screen and (max-width: 800px) {
+    .nav-container{
+        margin: 1rem;
+    }
+    .nav-links{
+        gap:1.5rem;
+    }
+    .main-right{
+        display: none;
+    }
+    main{
+        margin: 1rem;
+    }
+}

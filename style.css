@@ -1,48 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  width: 100vw;
-  height: 100vh;
   font-family: "Poppins", sans-serif;
   background-image: url(./images/interior.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
   background-color: #00000054;
   background-blend-mode: darken;
-  overflow: hidden;
 }
-
-.nav-container {
+.nav-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 2rem 4rem;
   font-size: 1.2rem;
   color: #fff;
+  flex-wrap: wrap;
 }
-
 .nav-logo {
   font-size: 2rem;
   font-weight: bold;
   width: 100px;
   line-height: 1.1;
 }
-
 .nav-links {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  gap: 4rem;
+  gap: 4rem; 
   font-weight: 500;
 }
-
+.nav-links li{
+  cursor: pointer;
+}
 .nav-links::after {
   content: "";
   position: absolute;
@@ -63,19 +58,20 @@ body {
 .phone-svg svg path {
   fill: #fff;
 }
-main {
-  margin: 3rem 0;
+main{
+  margin: 3rem 4.8rem;
   color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-left{
+  width: 60%;
 }
 .heading {
   font-size: 5rem;
-  width: 900px;
   margin-top: 6rem;
-  margin-left: 4.8rem;
 }
-
 .btn-learn-more {
-  margin-left: 4.8rem;
   margin-top: 5rem;
   padding: 1.3rem 3rem;
   background: transparent;
@@ -87,34 +83,37 @@ main {
   color: #fff;
   cursor: pointer;
 }
-
 .card {
-  width: 300px;
-  height: 200px;
+  width: 17rem;
+  height: 13rem;
   padding: 2rem;
   background: #cecece84;
   position: absolute;
   border-radius: 1rem;
-  box-shadow: 0 3px 5px #0000004c;
 }
-
 .card-puzzle {
-  /* position: absolute; */
   top: 10rem;
+  right: 4rem;
+}
+.card-light {
+  bottom: 3rem;
   right: 10rem;
 }
-
-.card-light {
-  /* position: absolute; */
-  bottom: 5rem;
-  right: 15rem;
+/* Top Card Line */
+.card-puzzle .line {
+  position: absolute;
+  bottom: -67px;
+  right: 20px;
+  transform: rotate(90deg);
 }
+/* Bottom card line */
 .card-light .line {
   position: absolute;
   top: 30px;
-  left: -99px;
+  left: -100px;
   transform: rotate(180deg);
 }
+/* Card icon */
 .icon-span {
   display: flex;
   align-items: center;
@@ -124,17 +123,10 @@ main {
   border-radius: 5rem;
   background: #fff;
 }
-
-.desc {
+/* Card Description */
+.desc{
   position: absolute;
   margin-right: 1rem;
   bottom: 2rem;
   font-weight: 600;
-}
-
-.card-puzzle .line {
-  position: absolute;
-  bottom: -67px;
-  right: 20px;
-  transform: rotate(90deg);
 }
